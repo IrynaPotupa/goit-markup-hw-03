@@ -218,7 +218,6 @@ img {
 
 .benefits {
   display: flex;
-  flex-basis: calc(100%/4 - 20px);
   height: 98px;
   padding: 0;
 }
