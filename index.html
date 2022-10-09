@@ -3,25 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
     <link rel="stylesheet" href="./css/styles.css" />
+      <title>WebStudio</title>
   </head>
   <body>
     <!-- шапка сайту -->
-    <header class="head">
-      <div class="container">
-        <nav>
+    <header class="header-section">
+    <div class="container">
+     <div class="header-container">
+         <nav class="header-naw">
           <a href="#" class="logo">Web<span class="logo-dark">Studio</span> </a>
           <ul class="site-naw list">
             <li>
@@ -43,14 +44,15 @@
             <a href="tel:+380961111111" class="cnt-link link">38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
+     </div>
+    </div>
     </header>
     <main>
       <!-- секція герой -->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+        <button type="button" class="hero-button">Замовити послугу</button>
         </div>
       </section>
       <!-- секція переваги -->
@@ -81,7 +83,7 @@
       <section class="section">
         <div class="container">
           <h2 class="example-title">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="list-example list">
             <li>
               <img src="./images/box1.jpg" alt="людина працює за робочим столом" width="370" />
             </li>
@@ -103,40 +105,51 @@
         </div>
       </section>
       <!-- секція команда -->
-      <section class="section-team">
+      <section class="section-team"> 
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="team-list list">
             <li class="team-folder">
               <img src="./images/photo1.jpg" alt="фото працівника Ігор Дем'яненко" width="270" />
-              <h3 class="team-list">Ігор Дем'яненко</h3>
+              <div class="team-details">
+                <h3 class="team-subtitle">Ігор Дем'яненко</h3>
               <p lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-folder">
               <img src="./images/photo2.jpg" alt="фото працівника Ольга Рєпіна" width="270" />
-              <h3 class="team-list">Ольга Рєпіна</h3>
+             <div class="team-details">
+               <h3 class="team-subtitle">Ольга Рєпіна</h3>
               <p lang="en">Frontend Developer</p>
+             </div>
             </li>
             <li class="team-folder">
               <img src="./images/photo3.jpg" alt="фото працівника Микола Тарасов" width="270" />
-              <h3 class="team-list">Микола Тарасов</h3>
+             <div class="team-details">
+               <h3 class="team-subtitle">Микола Тарасов</h3>
               <p lang="en">Marketing</p>
+             </div>
             </li>
             <li class="team-folder">
               <img src="./images/photo4.jpg" alt="фото працівника Михайло Єрмаков" width="270" />
-              <h3 class="team-list">Михайло Єрмаков</h3>
+              <div class="team-details">
+                <h3 class="team-subtitle">Михайло Єрмаков</h3>
               <p lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
     <!-- підвал -->
-    <footer class="footer">
-      <a href="#" class="logo">Web<span class="logo-light">Studio</span> </a>
-      <address>
+    <footer class="footer-section">
+    <div class="container">
+       <div class="footer-logo">
+         <a href="#" class="logo">Web<span class="logo-light">Studio</span> </a>
+       </div>
+       <address>
         <ul class="address list">
-          <li>
+          <li class="address-list">
             <a
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               class="link"
@@ -145,15 +158,16 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="address-list">
             <a href="malito:info@devstudio.com" class="address-link link" lang="en"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="address-list">
             <a href="tel:+380961111111" class="address-link link">38 096 111 11 11</a>
           </li>
         </ul>
+    </div>
       </address>
     </footer>
   </body>
