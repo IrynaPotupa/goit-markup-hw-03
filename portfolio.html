@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+    <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,10 +12,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>WebStudio</title>
   </head>
   <body>
-    <!-- шапка сайту -->
+    <!-- шапка -->
     <header class="header-section">
       <div class="container header-container">
         <nav class="header-naw">
@@ -46,94 +42,98 @@
       </div>
     </header>
     <main>
-      <!-- секція герой -->
-      <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
-        </div>
-      </section>
-      <!-- секція переваги -->
+      <!-- секція портфоліо -->
       <section class="section">
         <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="benefits list">
-            <li class="benefits-item">
-              <h3 class="benefits-title">Увага до деталей</h3>
-              <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          <h1 class="visually-hidden">Наше портфоліо</h1>
+          <ul class="filters list">
+            <li class="filters-list">
+              <button type="button" class="portfolio-button button current">Усі</button>
             </li>
-            <li class="benefits-item">
-              <h3 class="benefits-title">Пунктуальність</h3>
-              <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <li class="filters-list">
+              <button type="button" class="portfolio-button">Веб-сайти</button>
             </li>
-            <li class="benefits-item">
-              <h3 class="benefits-title">Планування</h3>
-              <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+            <li class="filters-list">
+              <button type="button" class="portfolio-button">Додатки</button>
             </li>
-            <li class="benefits-item">
-              <h3 class="benefits-title">Сучасні технології</h3>
-              <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <li class="filters-list">
+              <button type="button" class="portfolio-button">Дизайн</button>
             </li>
-          </ul>
-        </div>
-      </section>
-      <!-- секція наші роботи -->
-      <section class="example-section">
-        <div class="container">
-          <h2 class="example-title">Чим ми займаємося</h2>
-          <ul class="list-example list">
-            <li>
-              <img src="./images/box1.jpg" alt="людина працює за робочим столом" width="370" />
-            </li>
-            <li>
-              <img
-                src="./images/box2.jpg"
-                alt="людина звіряє телефон з макетом на ноутбуці"
-                width="370"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/box3.jpg"
-                alt="людина обирає палітру кольорів на планшеті"
-                width="370"
-              />
+            <li class="filters-list">
+              <button type="button" class="portfolio-button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- секція команда -->
-      <section class="section-team">
-        <div class="container">
-          <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="team-folder">
-              <img src="./images/photo1.jpg" alt="фото працівника Ігор Дем'яненко" width="270" />
-              <div class="team-details">
-                <h3 class="team-subtitle">Ігор Дем'яненко</h3>
-                <p lang="en">Product Designer</p>
-              </div>
+          <ul class="portfolio-card link list">
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/img1.jpg"
+                  alt="відкритий веб сайт на моніторі ноутбука"
+                  width="370"
+                />
+                <h2 class="portfolio-title">Технокряк</h2>
+                <p>Веб-сайт</p>
+              </a>
             </li>
-            <li class="team-folder">
-              <img src="./images/photo2.jpg" alt="фото працівника Ольга Рєпіна" width="270" />
-              <div class="team-details">
-                <h3 class="team-subtitle">Ольга Рєпіна</h3>
-                <p lang="en">Frontend Developer</p>
-              </div>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img2.jpg" alt="два баскетболісти боряться за м'яч" width="370" />
+                <h2 class="portfolio-title">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                <p>Дизайн</p>
+              </a>
             </li>
-            <li class="team-folder">
-              <img src="./images/photo3.jpg" alt="фото працівника Микола Тарасов" width="270" />
-              <div class="team-details">
-                <h3 class="team-subtitle">Микола Тарасов</h3>
-                <p lang="en">Marketing</p>
-              </div>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img3.jpg" alt="назва ресторану на фоні сірої риби" width="370" />
+                <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
+                <p>Додаток</p>
+              </a>
             </li>
-            <li class="team-folder">
-              <img src="./images/photo4.jpg" alt="фото працівника Михайло Єрмаков" width="270" />
-              <div class="team-details">
-                <h3 class="team-subtitle">Михайло Єрмаков</h3>
-                <p lang="en">UI Designer</p>
-              </div>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img4.jpg" alt="великі чорні безпровідні навушники" width="370" />
+                <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
+                <p>Маркетинг</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img5.jpg" alt="дві коробки біла та картонна" width="370" />
+                <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
+                <p>Додаток</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img6.jpg" alt="монітор з зображеним веб-сайтом" width="370" />
+                <h2 class="portfolio-title" lang="en">Inspiration has no Borders</h2>
+                <p>Веб-сайт</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img7.jpg" alt="відкритий журнал" width="370" />
+                <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
+                <p>Дизайн</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img src="./images/img8.jpg" alt="біла бірка на мотузці" width="370" />
+                <h2 class="portfolio-title">Проєкт <span lang="en">LAB</span></h2>
+                <p>Маркетинг</p>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link">
+                <img
+                  src="./images/img9.jpg"
+                  alt="руки людини на клавіатурі ноутбука з відкритим додатком"
+                  width="370"
+                />
+                <h2 class="portfolio-title" lang="en">Growing Business</h2>
+                <p>Додаток</p>
+              </a>
             </li>
           </ul>
         </div>
